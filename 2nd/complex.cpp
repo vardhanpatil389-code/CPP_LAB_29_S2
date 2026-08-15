@@ -10,7 +10,8 @@ public:
     Complex add(const Complex &c) { return Complex(real + c.real, imag + c.imag); }
     Complex subtract(const Complex &c) { return Complex(real - c.real, imag - c.imag); }
     void display() const { cout << real << " + i" << imag << endl; }
-};
+}; 
+
 int main()
 {
     Complex c1(4, 5), c2(8, 9);
@@ -24,5 +25,8 @@ int main()
     sum.display();
     cout << "Subtraction: ";
     diff.display();
+   
     return 0;
+
+
 }
